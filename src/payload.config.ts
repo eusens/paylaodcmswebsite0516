@@ -1,5 +1,6 @@
 // storage-adapter-import-placeholder
 import { mongooseAdapter } from '@payloadcms/db-mongodb'
+import { resendAdapter } from '@payloadcms/email-resend'
 
 import sharp from 'sharp' // sharp-import
 import path from 'path'
@@ -89,4 +90,9 @@ export default buildConfig({
     },
     tasks: [],
   },
+  email: resendAdapter({
+    apiKey: process.env.RESEND_API_KEY!,
+    defaultFromAddress: process.env.RESEND_FROM_ADDRESS!,
+    defaultFromName: process.env.RESEND_FROM_NAME!,
+  }),
 })
