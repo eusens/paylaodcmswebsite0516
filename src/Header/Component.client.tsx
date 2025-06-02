@@ -31,7 +31,7 @@ export const HeaderClient: React.FC<HeaderClientProps> = ({ data }) => {
 
   return (
     <header
-      className="container relative z-20    h-30 md:h-40"
+      className="container relative z-20  bg-[#fafff0]  h-30 md:h-40"
       {...(theme ? { 'data-theme': theme } : {})}
     >
       <div className="py-8 flex justify-between text-black hover:text-[#FF7F50]">
