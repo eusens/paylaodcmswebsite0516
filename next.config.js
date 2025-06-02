@@ -10,6 +10,11 @@ const NEXT_PUBLIC_SERVER_URL = process.env.VERCEL_PROJECT_PRODUCTION_URL
 const nextConfig = {
   images: {
     remotePatterns: [
+      // Allow images from your payload CMS S3 bucket
+      {
+        protocol: 'https',
+        hostname: 'a-payloadcms.s3.us-west-2.amazonaws.com',
+      },
       ...[NEXT_PUBLIC_SERVER_URL /* 'https://example.com' */].map((item) => {
         const url = new URL(item)
 
