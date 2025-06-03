@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function ProfilePage() {
   return (
     <main className="max-w-5xl mx-auto p-6 space-y-10">
-      <h1 className="text-3xl font-bold text-center mb-4">About Newsino Limited</h1>
+      <h1 className="text-3xl font-bold  mb-4">About Newsino Limited</h1>
 
       {/* Intro with image */}
       <div className="flex flex-col md:flex-row gap-6 items-center">
