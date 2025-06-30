@@ -7,9 +7,7 @@ const getPagesSitemap = unstable_cache(
   async () => {
     const payload = await getPayload({ config })
     const SITE_URL =
-      process.env.NEXT_PUBLIC_SERVER_URL ||
-      process.env.VERCEL_PROJECT_PRODUCTION_URL ||
-      'https://example.com'
+      process.env.NEXT_PUBLIC_SITE_URL || 'https://www.panasonicservomotor.com'
 
     const results = await payload.find({
       collection: 'pages',
@@ -37,7 +35,7 @@ const getPagesSitemap = unstable_cache(
         lastmod: dateFallback,
       },
       {
-        loc: `${SITE_URL}/posts`,
+        loc: `${SITE_URL}/products`,
         lastmod: dateFallback,
       },
     ]
