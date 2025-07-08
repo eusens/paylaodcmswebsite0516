@@ -57,7 +57,7 @@ export async function Footer() {
       <div>
         {/* Copyright text */}
         <p className="text-center text-sm mt-6">
-          © {new Date().getFullYear()} XXX Company. All rights reserved.
+          © {new Date().getFullYear()} Eusens Company. All rights reserved.
         </p>
       </div>
     </footer>
