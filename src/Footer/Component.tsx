@@ -57,7 +57,16 @@ export async function Footer() {
       <div>
         {/* Copyright text */}
         <p className="text-center text-sm mt-6">
-          © {new Date().getFullYear()} Eusens Company. All rights reserved.
+          © {new Date().getFullYear()}{' '}
+          <a
+            href="https://eusens.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-gray-600 transition-colors"
+          >
+            By Eusens Technology,
+          </a>{' '}
+          All Rights Reserved.
         </p>
       </div>
     </footer>
