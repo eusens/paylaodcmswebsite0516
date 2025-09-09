@@ -18,14 +18,17 @@ import PageClient from './page.client'
 import { LivePreviewListener } from '@/components/LivePreviewListener'
 
 // ✅ Revalidate every 60 seconds
-export const revalidate = 60
+export const revalidate = 60 * 60
+
+// ✅ Enable ISR fallback for new slugs
+export const dynamicParams = true
 
 export async function generateStaticParams() {
   const payload = await getPayload({ config: configPromise })
   const posts = await payload.find({
     collection: 'posts',
     draft: false,
-    limit: 100000,
+    limit: 10000,
     overrideAccess: false,
     pagination: false,
     select: {
