@@ -59,7 +59,7 @@ export default function ProfilePage() {
   <div><strong>No. of Employees:</strong> 10–20</div>
   <div><strong>Annual Sales:</strong> 500–1000</div>
   <div><strong>Year Established:</strong> 2014</div>
-  <div><strong>Export Percentage:</strong> 80%–90%</div>
+  <div><strong>Export Percentage:</strong> 60%–80%</div>
 </section>
 
     </main>
