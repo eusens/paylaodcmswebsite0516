@@ -15,7 +15,7 @@ export default function ProfilePage() {
           className="w-full h-auto rounded-xl shadow-md object-cover"
         />
         <p className="text-base leading-7 text-gray-700">
-          Newsino Limited is a control system components company located in Guangzhou, Guangdong Province, China.
+          Newsino Limited is a control system components company located in Guangzhou city,  China.
           We specialize in providing world-renowned brands such as Allen Bradley, ABB, Bently Nevada, GE, Honeywell,
           Emerson, Triconex, Hima, and even some discontinued ones.
         </p>
