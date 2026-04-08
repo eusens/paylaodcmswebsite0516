@@ -18,7 +18,7 @@ import PageClient from './page.client'
 import { LivePreviewListener } from '@/components/LivePreviewListener'
 
 // ✅ Revalidate every 60 seconds
-export const revalidate = 60 * 60
+export const revalidate = 3600
 
 // ✅ Enable ISR fallback for new slugs
 export const dynamicParams = true
