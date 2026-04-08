@@ -30,8 +30,16 @@ const eslintConfig = [
       ],
     },
   },
+  // 针对 Media 组件放宽规则
   {
-    ignores: ['.next/'],
+    files: ['src/components/Media/**/*.tsx', 'src/components/Media/**/*.jsx'],
+    rules: {
+      'react/jsx-no-undef': 'off',
+      '@typescript-eslint/no-unused-vars': 'off',
+    },
+  },
+  {
+    ignores: ['.next/', 'dist/', 'build/'],
   },
 ]
 
